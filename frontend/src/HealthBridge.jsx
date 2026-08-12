@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 // ── Config ────────────────────────────────────────────────────
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = import.meta.env.VITE_API_URL;
 
 // Haversine formula — matches your backend utils/distance.js
 const calcDistance = (lat1, lon1, lat2, lon2) => {
